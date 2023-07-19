@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <!-- bean definitions here -->
+    
+    
+<bean name="bean1" class="com.springcorebasics.MyfirstSpringApp" init-method="init"  destroy-method="destroy">
+<property name="message" value="Welcome Ameeerpet Students to spring core module"></property>
+</bean>
+
+<bean name="bean2" class="com.springcorebasics.MyfirstSpringApp" >
+<property name="message" value="Welcome Megha college students"></property>
+</bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- creating beans for Lion and Tiger classes -->
+<!--  <bean name="tigerBean" class="com.tightcoupling.Tiger">
+</bean>
+
+<bean name="lionBean" class="com.tightcoupling.Lion">
+</bean>-->
+
+</beans>
