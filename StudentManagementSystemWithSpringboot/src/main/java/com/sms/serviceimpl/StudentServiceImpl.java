@@ -53,4 +53,16 @@ public class StudentServiceImpl implements StudentService {
 		
 	}
 
+	@Override
+	public List<Student> getStudentsByAddress(String address) {
+		
+		return studentRepository.findByAddress(address);
+	}
+
+	@Override
+	public List<Student> getStudentsByNameAndAddess(String name, String address) {
+	
+		return studentRepository.findByNameAndAddress(name, address);
+	}
+
 }

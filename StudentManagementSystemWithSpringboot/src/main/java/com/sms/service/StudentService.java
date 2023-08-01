@@ -10,7 +10,8 @@ public interface StudentService {
 	Student getStudentById(int id);
 	Student updateStudent(int id,Student student);
 	String deleteStudent(int id);
-	
+	List<Student> getStudentsByAddress(String address);
+	List<Student> getStudentsByNameAndAddess(String name,String address);
 	
 	
 
